@@ -1,290 +1,134 @@
-body {
-    margin: 0px;
-    width: 100%;
-    --object-fit: cover;
-    font-family: 'Acme', sans-serif;
-}
-nav{
-    width: 100%;
-    position:fixed;
-    background-color: #111d5e;
-}
-nav ul{
-    float: right;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-}
-nav ul li{
-    list-style-type: none;
-    float: left;
-}
-nav ul li a{
-    text-decoration: none;
-    color: #ffbd69;
-    display: block;
-    text-align: center;
-    padding: 14px 16px;
-}
-nav ul li a:hover{
-    background-color: rgba(0,0,0,0.3);
-}
-section{
-    background-color: #c70039;
-}
-.home{
-    display: table;
-    height: 100vh;
-    width: 100%;
-    padding-top: 120px;
-    --padding: 50px;
-}
-.home .inner{
-    text-align: center;
-    font-size: 48px;
-    color: #fff;    
-}
-.home .inner img{
-    border-radius: 100%;
-}
-.about{
-    display: table;
-    height: 100vh;
-    width: 100%;
-    background-color: #111d5e;
-    background-image: url(https://wearecuppa.co.uk/wp-content/uploads/2018/04/services-banner-image.png);
-    background-repeat: no-repeat;
-    background-position: center;
-}
-.about .inner{
-    float: left;
-    background-color: rgba(0,0,0,0.5);
-    min-height: 100vh;
-}
-.about .inner h1{
-    font-size: 42px;
-    color: #ffbd69;
-    --padding-right: 50px;
-    padding-left: 50px;
-    padding-top: 150px;
-    padding-bottom: 50px;
-}
-.about  p{
-    font-size: 32px;
-    color: #fff;
-    width: 70%;
-    line-height: 1.6em;
-    padding-left: 150px;
-}
-.education{
-    display: table;
-    height: 100vh;
-    width: 100%;
-    background-color: #fff;
-    --padding: 50px;
-}
-.education h1{
-    font-size: 42px;
-    color: #ffbd69;
-    padding-top: 150px;
-    padding-left: 50px;
-    padding-bottom: 50px;
-}
-.education .inner div, .skills .inner div, .hobbies .inner div{
-    width: 32%;
-    margin-left: 5px;
-    margin-right: 5px;
-    float: left;
-    text-align: center;
-}
-.education .inner div p{
-    font-size: 28px;
-}
-.education .inner div img, .insta, .fb, .phone, .gmail{
-    width: 100px;
-    height: auto;
-}
-.skills{
-    background-image: url('https://blog.edgenuity.com/wp-content/uploads/2017/06/digital-skills-gap-banner.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-.skills h1{
-    font-size: 42px;
-    color: #ffbd69;
-    padding-top: 150px;
-    padding-bottom: 50px;
-    padding-left: 50px;
-}
-.skills .inner, .hobbies, .contact .inner{
-    display: table;
-    height: 100vh;
-    width: 100%;
-}
-.skills .inner{
-    background-color: rgba(0,0,0,0.7);
-    --padding: 50px;
-}
-.skills .inner div ul li{
-    list-style-type: none;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    font-size: 26px;
-    color: #fff;
-}
-.hobbies{
-    background-color: #fff;
-}
-.hobbies .inner h1, .contact .inner h1{
-    font-size: 42px;
-    color: #ffbd69;
-    padding-top: 150px;
-    padding-bottom: 50px;
-    padding-left: 50px;
-}
-.hobbies .inner div img{
-    width: 200px;
-    height: auto;
-}
-.hobbies .inner div p{
-    font-size: 28px;
-}
-.contact{
-    display: table;
-    height: 100vh;
-    width: 100%;
-}
-.contact .inner{
-    --background-color: rgba(0,0,0,0.5);
-}
-.contact .inner div{
-    width: 24%;
-    margin-left: 5px;
-    margin-right: 5px;
-    float: left;
-    text-align: center;
-}
-.contact .inner div p{
-    font-size: 28px;
-    color: #fff;
-}
-.gmail{
-    padding: 12px 0px;
-}
-@media (min-width: 320px) and (max-width: 767px){
-    nav ul li{
-        font-size: 12px;
-    }
-    nav ul li a{        
-        padding: 7px 9px;
-    }
-    .home .inner{
-        font-size: 36px;
-    }
-    .home .inner img{
-        width: 200px;
-        height: auto;
-    }
-    .about p{
-        padding-left: 50px;
-        font-size: 18px;
-        text-align: justify;
-        width: 80%;
-    }
-    .education .inner div, .skills .inner div, .hobbies .inner div, .contact .inner div{
-        width: 100%;
-    }
-    .about .inner h1, .education h1, .skills h1, .hobbies .inner h1, .contact .inner h1{
-        padding-top: 50px;
-        padding-bottom: 10px;
-    }
-    .education .inner div p, .skills .inner div ul li, .hobbies .inner div p, .contact .inner div p{
-        font-size: 18px;
-    }
-    .skills .inner div ul{
-        padding-left: 0;
-    }
-}
-@media (min-width: 768px) and (max-width: 1023px){
-    .about .inner p{
-        font-size: 20px;
-    }
-    .education .inner div p{
-        font-size: 20px;
-    }
-    .hobbies .inner div img{
-        width: 150px;
-        height: auto;
-    }
-    .contact .inner div{
-        width: 48%;
-    }
-}
-@media (min-width: 1024px) and (max-width: 1439px){
-    .contact .inner div{
-        width: 48%;
-    }
-}
-@media (min-width: 2560px){
-    nav ul li{
-        font-size: 42px;
-    }
-    nav ul li a{        
-        padding: 20px 30px;
-    }
-    .home{
-        height: 70vh;
-        padding-top: 600px;
-    }
-    .about{
-        background-size: contain;
-        background-position: center;
-        --height: 70vh;
-    }
-    .about .inner{
-        --min-height: 70vh;
-    }
-    .about .inner h1{
-        padding-top: 500px;
-        font-size: 84px;
-    }
-    .about p{
-        font-size: 54px;
-    }
-    .education h1{
-        padding-top: 500px;
-        font-size: 84px;
-    }
-    .education .inner div img{
-        width: 250px;
-        height: auto;
-    }
-    .education .inner div p{
-        font-size: 54px;
-    }
-    .skills h1{
-        padding-top: 500px;
-        font-size: 84px;
-    }
-    .skills .inner div ul li{
-        font-size: 54px;
-    }
-    .hobbies .inner h1, .contact .inner h1{
-        padding-top: 500px;
-        font-size: 84px;
-    }
-    .hobbies .inner div p, .contact .inner div p{
-        font-size: 54px;
-    }
-    .hobbies .inner div img{
-        width: 500px;
-        height: auto;
-    }
-    .insta, .fb, .phone, .gmail{
-        width: 250px;
-        height: auto;
-    }
-    .gmail{
-        padding: 35px 0px;
-    }
-}
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Salman bolte</title>
+        <meta charset = "utf-8">
+        <meta  name ="viewport" content = "width =device-width intial-scale = 1 shrink-to-fit=no">
+        <link rel="stylesheet" type="text/css" href="assets/style/style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Acme&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#hobbies">Hobbies</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <section class="home" id="home">
+            <div class="inner">
+                <img src='https://avatarfiles.alphacoders.com/225/225869.png'>
+                <h1>Salman Mohammed</h1>
+            </div>
+        </section>
+        <section class="about" id="about">
+            <div class ="inner">
+                <h1>About</h1>
+                <p>
+                    Hello guys! I'm Salman. I'm a student currently pursing 2nd year of B.tech in a unversity under ofcourse the branch of Computer Sciences. I'm a gaming freak as all know, it's PUBG. I like to work with photoshop. I can also do word, power point presentations and excel sheets. And a lil what adds up me is hacking, I'm not like a complete pro but I learn upto my interest.
+                </p>
+            </div>
+        </section>
+        <section class="education" id="education">
+            <h1>Education</h1>
+            <div class="inner">
+                <div>
+                    <img src = 'https://cdn4.iconfinder.com/data/icons/school-icon-set-1/512/1-512.png'>
+                    <p>Schooling: Siddhartha high school</p>
+                    <p>English medium</p>
+                    <p>97%</p>
+                </div>
+                <div>
+                    <img src="https://st2.depositphotos.com/8440746/11446/v/450/depositphotos_114467146-stock-illustration-student-icon-graduate-academic-education.jpg">
+                    <p>Intermediate: Hyderabad Institute of Excellence</p>
+                    <p>M.P.C</p>
+                    <p>97.7%</p>
+                </div>
+                <div>
+                    <img src="https://media.istockphoto.com/vectors/black-graduation-cap-diploma-icon-vector-id664199826?k=6&m=664199826&s=170667a&w=0&h=Bmu706h_79-VH5rxVx60Vh-NswmQysV4NNdZs1-c9dU=">
+                    <p>Gradution: JNTU College of engineering, Anantapur</p>
+                    <p>Computer Science and Engineering</p>
+                    <p>75%</p>
+                </div>
+            </div>
+        </section>
+        <section class="skills" id="skills">
+            <div class="inner">
+                <h1>Skills</h1>
+                <div>
+                    <ul>
+                        <li>HTML5</li>
+                        <li>CSS3</li>
+                        <li>js</li>
+                    </ul>
+                </div>
+                <div>
+                    <ul>
+                        <li>Word</li>
+                        <li>Excel</li>
+                        <li>Power Point</li>
+                    </ul>    
+                </div>
+                <div>
+                    <ul>
+                        <li>Photoshop</li>
+                        <li>Lightroom</li>
+                        <li>Premiere pro</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <section class="hobbies" id="hobbies">
+            <div class="inner">
+            <h1>Hobbies</h1>
+                <div>
+                    <img src="https://www.freepngimg.com/thumb/logo/72076-one-twitch-playerunknown's-youtube-xbox-fortnite-logo.png">
+                    <p>Playing PUBG</p>
+                </div>
+                <div>
+                    <img src="https://static.thenounproject.com/png/642045-200.png">
+                    <p>Chess</p>
+                </div>
+                <div>
+                    <img src="https://static.thenounproject.com/png/1646796-200.png">
+                    <p>Basket ball</p>
+                </div>
+            </div>
+        </section>
+        <section class="contact" id="contact">
+            <div class="inner">
+                <h1>Approach me</h1>
+                <div>
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Instagram_logo_2016.svg/1024px-Instagram_logo_2016.svg.png" class="insta">
+                    <p>@thesalmxn</p>
+                </div>
+                <div>
+                    <img src="https://aikidomorelos.files.wordpress.com/2012/10/facebook-logo-icon-02.png?w=848" class="fb">
+                    <p>Salman Mohammed</p>
+                </div>
+                <div>
+                    <img src="https://www.google.com/gmail/about/static/images/logo-gmail.png?cache=3218fbf" class="gmail">
+                    <p>shaiksalmanssn@gmail.com</p>
+                </div>
+                <div>
+                    <img src="https://www.pngkit.com/png/full/82-829739_phone-icon.png" class="phone">
+                    <p>xxxxxxxxxx</p>
+                </div>
+            </div>
+        </section>
+        <!--
+            html
+            head
+            body
+            nav
+            ul
+            div
+            h1
+            p
+            br
+        -->
+    </body>
+</html>
